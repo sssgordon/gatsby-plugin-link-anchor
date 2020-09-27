@@ -7,7 +7,8 @@ export const isDevelopment = process.env.NODE_ENV !== "production";
 
 export function scroller(target, offset = 0) {
   scrollToElement(target, {
-    offset
+    offset,
+    ease: "in-out-quart",
   });
 }
 
